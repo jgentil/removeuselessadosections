@@ -1,0 +1,40 @@
+/* ==UserStyle==
+@name         RemoveUselessADOSections
+@namespace    github.com/jgentil/removeuselessadosections
+@version      1.0.0
+@license      unlicense
+@preprocessor default
+==/UserStyle== */
+@-moz-document url-prefix("https://sede-ui-adp.visualstudio.com/Exploration-Digi/") {
+
+/* section 3 is 3rd column, row 1 is Deployment */
+div.work-item-view .section3 > div:nth-child(1) {
+    display: none;
+}
+
+/* section 3 is 3rd column, row 2 is Kanban */
+div.work-item-view .section3 > div:nth-child(2) {
+    display: none;
+}
+
+/* section 3 is 3rd column, row 3 is Development */
+div.work-item-view .section3 > div:nth-child(3) {
+    display: none;
+}
+
+/* section 3 is 3rd column, row 4 is Support */
+div.work-item-view .section3 > div:nth-child(4) {
+    display: none;
+}
+
+/* NEW SECTION */
+/* section 2 is 2nd column, row 1 is Details */
+div.work-item-view .section2 > div:nth-child(1) {
+    display: none;
+}
+
+/* section 2 is 2nd column, row 5 is SpecMap */
+div.work-item-view .section2 > div:nth-child(5) {
+    display: none;
+}
+}
